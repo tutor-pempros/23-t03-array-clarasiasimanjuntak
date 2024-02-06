@@ -1,11 +1,32 @@
-// NIM - NAMA
+// 12S23019_clarasia l. simanjuntak
 
 #include <stdio.h>
 
-int main(int _argc, char **_argv)
-{
+int main() {
+    int num, Min, Max;
 
-  // your code here
+    for (int i = 0; i < 9; i++) {
+        scanf("%d", &num);
 
-  return 0;
+        if (num == 0) {
+            break;
+        }
+
+        if (i == 0) {
+            Min = num;
+            Max = num;
+        } else {
+            if (num < Min) {
+                Min = num;
+            }
+            if (num > Min) {
+                Max = num;
+            }
+        }
+    }
+
+    printf("%d\n", Min);
+    printf("%d\n", Max);
+
+return 0;
 }
