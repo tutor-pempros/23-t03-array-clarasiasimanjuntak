@@ -2,12 +2,13 @@
 
 #include <stdio.h>
 
-int main() {
+int main()
+ {
     int num, Min, Max;
 
     for (int i = 0; i < 9; i++) {
         scanf("%d", &num);
-
+    
         if (num == 0) {
             break;
         }
@@ -15,11 +16,12 @@ int main() {
         if (i == 0) {
             Min = num;
             Max = num;
-        } else {
+        } else
+        {
             if (num < Min) {
                 Min = num;
             }
-            if (num > Min) {
+            if (num > Max) {
                 Max = num;
             }
         }
